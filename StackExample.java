@@ -8,26 +8,28 @@ public class StackExample
 
             arr[top] =x ;               //top value of array assign to x variable
             top = top + 1;              //incrementing top value for inserting new value
-            System.out.println("Element insert into the stack "+x); // print inserted value
+            System.out.println("Element insert into the stack :"+x); // print inserted value
             return x;                    //return value x
         }
 
 
 
-       public void pop()
+      public void pop()
         {   int x;
             top = top -1;                   // decrement top value
             x = arr[top];                   //assign top value to x
             System.out.println("Element remove from stack "+ x); // print removed value
-            //return x;
-
+            System.out.println("After removing element top value is : "+arr[top-1]);
 
         }
 
 
+
+
         public void peek()
         {
-            System.out.println("Top element of stack "+arr[top]);     // print top value
+
+            System.out.println("Top element of stack : "+arr[top]);     // print top value
         }
 
 
